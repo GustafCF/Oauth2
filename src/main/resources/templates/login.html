@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <title>Login Page</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href=/css/login.css>
 </head>
 <body>
     <h1>Login</h1>
     <form id="login-form">
         <label for="username">Username</label>
-        <input type="text" name="username" id="username" placeholder="Username">
+        <input type="text" name="username" id="username" placeholder="Username" autocomplete="username">
         <label for="password">Password</label>
-        <input type="password" name="password" id="password" placeholder="Password">
+        <input type="password" name="password" id="password" placeholder="Password" autocomplete="current-password">
         <button type="submit">Login</button>
     </form>
+    <a href="/register">Clique aqui para se cadastrar</a>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/js/login.js"></script>
